@@ -1,0 +1,25 @@
+.HeaderWrapper {
+  height: 10%;
+  width: 100%;
+  background-color: var(--color-secondary);
+  text-align: center;
+  font-family: "Akaya Telivigala", Arial;
+  font-size: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.SecondaryWrapper {
+  flex-grow: 1;
+  flex-basis: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.CenteredWrapper {
+  flex-grow: 1;
+  flex-basis: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

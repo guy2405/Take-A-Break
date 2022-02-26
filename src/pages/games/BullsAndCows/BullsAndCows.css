@@ -1,0 +1,106 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin: auto auto;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  color: var(--color-secondary-dark);
+}
+
+.optionsWrapper {
+  flex-grow: 1;
+  flex-basis: 0;
+  margin: auto 0;
+}
+
+.boardWrapper {
+  flex-grow: 3;
+  flex-basis: 0;
+  display: flex;
+  margin: 1rem;
+}
+
+.colorOptions {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.colorWrapper {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 3rem;
+  margin: 0.3rem auto;
+  cursor: pointer;
+}
+
+.boardGuess {
+  flex-grow: 3;
+  flex-basis: 0;
+  margin: 0 0.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.guessWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 8%;
+  border: 1px solid black;
+}
+
+.guessColor {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 2rem;
+  border: 1px solid black;
+  margin: auto auto;
+}
+
+.boardResult {
+  flex-grow: 1;
+  flex-basis: 0;
+  margin: 0 0.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.guessResultWrapper {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 8%;
+  border: 1px solid black;
+}
+
+.guessResultPin {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 0.5rem;
+  border: 0.5px solid black;
+  margin: auto;
+}
+
+.controlsWrapper {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.arrowBack {
+  color: white;
+  background-color: var(--color-secondary-dark);
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.doneIcon {
+  color: white;
+  background-color: greenyellow;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
