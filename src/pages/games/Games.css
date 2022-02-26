@@ -1,0 +1,16 @@
+@media only screen and (max-width: 600px) {
+  .GamesWrapper {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .GamesWrapper {
+    width: 50%;
+  }
+}
+
+.GamesWrapper {
+  height: 100%;
+  margin: 0 auto;
+}

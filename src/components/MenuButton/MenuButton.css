@@ -1,0 +1,16 @@
+.MenuButton {
+  width: 50%;
+  height: 80%;
+  border-radius: 1rem;
+  border: 0.3rem solid var(--color-secondary-dark);
+  margin: auto;
+  background-color: var(--color-secondary);
+  cursor: pointer;
+  font-family: "Akaya Telivigala", Arial;
+  font-size: 3rem;
+  color: var(--color-white);
+}
+
+.MenuButton:hover {
+  background-color: var(--color-secondary-dark);
+}
