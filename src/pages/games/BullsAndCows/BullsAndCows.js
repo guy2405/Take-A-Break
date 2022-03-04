@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import DoneIcon from "@mui/icons-material/Done";
 import { setCurrGameData, setCurrGameSpecificData } from "../../../AppSlice";
@@ -20,7 +20,7 @@ const COLORS = [
 const NUM_OF_TURNS = 12;
 const NUM_OF_COLORS_IN_TURN = 4;
 const BULLS_COLOR = "red";
-const COWS_COLOR = "white";
+const COWS_COLOR = "blue";
 
 const BullsAndCows = () => {
   const chosenColors = useSelector(

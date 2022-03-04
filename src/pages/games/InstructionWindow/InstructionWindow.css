@@ -1,0 +1,43 @@
+.instructionWrapper {
+  background-color: var(--color-secondary);
+  width: 50%;
+  height: 50%;
+  opacity: 0.95;
+  z-index: 100;
+  position: absolute;
+  top: 25%;
+  border-radius: 0.5rem;
+  border: 2px solid var(--color-secondary-dark);
+  padding: 1rem;
+  overflow-y: auto;
+  padding: 0.5rem;
+}
+
+.title {
+  text-align: center;
+  font-family: "Akaya Telivigala", Arial;
+  font-size: 2rem;
+  margin: 0;
+  white-space: pre;
+}
+
+.subTitle {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.4rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  text-decoration: underline;
+}
+
+.content {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+
+.closeIcon {
+  position: absolute;
+  left: 0.5rem;
+  top: 0.3rem;
+  cursor: pointer;
+}

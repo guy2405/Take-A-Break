@@ -25,7 +25,7 @@ const SummaryWindow = ({ gameStatus }) => {
   return (
     <div className="summaryWrapper">
       {renderMessageAccordingToStatus()}
-      <AppNavigation />
+      <AppNavigation excludeInfo={true} />
     </div>
   );
 };

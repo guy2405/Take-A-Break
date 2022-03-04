@@ -1,7 +1,7 @@
 import MenuButton from "../../components/MenuButton";
 import Games from "../games/Games";
 import { useSelector, useDispatch } from "react-redux";
-import { setCurrGame } from "../../AppSlice";
+import { setCurrGame, setShowInstruction } from "../../AppSlice";
 
 import "./MainPage.css";
 
@@ -10,6 +10,7 @@ const MainPage = () => {
   const dispatch = useDispatch();
   const handleGameChanged = (gameName) => {
     dispatch(setCurrGame(gameName));
+    dispatch(setShowInstruction(true));
   };
 
   const renderOptions = () => (

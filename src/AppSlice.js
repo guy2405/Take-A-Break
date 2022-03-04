@@ -3,6 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
   currGame: null,
   gameData: {},
+  showInstruction: false,
 };
 
 export const AppSlice = createSlice({
@@ -11,6 +12,7 @@ export const AppSlice = createSlice({
   reducers: {
     setCurrGame: (state, { payload }) => {
       state.currGame = payload;
+      state.showInstruction = true;
     },
     resetCurrGame: (state) => {
       state.currGame = null;
@@ -27,6 +29,9 @@ export const AppSlice = createSlice({
     resetCurrGameData: (state) => {
       state.gameData = {};
     },
+    setShowInstruction: (state, { payload }) => {
+      state.showInstruction = payload;
+    },
   },
 });
 
@@ -36,6 +41,7 @@ export const {
   setCurrGameData,
   resetCurrGameData,
   setCurrGameSpecificData,
+  setShowInstruction,
 } = AppSlice.actions;
 
 export default AppSlice.reducer;
