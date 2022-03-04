@@ -9,14 +9,14 @@ const SummaryWindow = ({ gameStatus }) => {
         return (
           <>
             <h1>Congrats!</h1>
-            <p>You win in the game</p>
+            <h2>You win in the game</h2>
           </>
         );
       default:
         return (
           <>
             <h1>Game Over</h1>
-            <p>Why not to try again?</p>
+            <h2>Why not to try again?</h2>
           </>
         );
     }
@@ -25,7 +25,9 @@ const SummaryWindow = ({ gameStatus }) => {
   return (
     <div className="summaryWrapper">
       {renderMessageAccordingToStatus()}
-      <AppNavigation excludeInfo={true} />
+      <div>
+        <AppNavigation excludeInfo={true} />
+      </div>
     </div>
   );
 };

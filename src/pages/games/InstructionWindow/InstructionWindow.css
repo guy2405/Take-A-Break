@@ -13,28 +13,6 @@
   padding: 0.5rem;
 }
 
-.title {
-  text-align: center;
-  font-family: "Akaya Telivigala", Arial;
-  font-size: 2rem;
-  margin: 0;
-  white-space: pre;
-}
-
-.subTitle {
-  font-family: "Open Sans", sans-serif;
-  font-size: 1.4rem;
-  margin-top: 1rem;
-  margin-left: 1rem;
-  text-decoration: underline;
-}
-
-.content {
-  font-family: "Open Sans", sans-serif;
-  font-size: 1rem;
-  margin-left: 1rem;
-}
-
 .closeIcon {
   position: absolute;
   left: 0.5rem;

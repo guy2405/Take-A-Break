@@ -31,9 +31,7 @@ const InstructionWindow = () => {
   const renderInstructions = (type) => {
     const instructionArr = gameInstructions[type];
     return instructionArr.map((item, index) => (
-      <p key={`item${index}_${type}`} className="content">
-        {item}
-      </p>
+      <p key={`item${index}_${type}`}>{item}</p>
     ));
   };
 
@@ -42,10 +40,10 @@ const InstructionWindow = () => {
       <div className="closeIcon">
         <CloseIcon onClick={handleOnCloseIconClicked} />
       </div>
-      <h1 className="title">{currGame}</h1>
-      <p className="subTitle">How to play</p>
+      <h2>{currGame}</h2>
+      <h3>How to play</h3>
       {renderInstructions("how to play")}
-      <p className="subTitle">How you win</p>
+      <h3>How you win</h3>
       {renderInstructions("how to win")}
     </div>
   );

@@ -9,7 +9,9 @@ const Header = () => {
   return (
     <div className="HeaderWrapper">
       <div className="SecondaryWrapper"></div>
-      <div className="CenteredWrapper">Take A Break</div>
+      <div className="CenteredWrapper">
+        <h1>Take A Break</h1>
+      </div>
       <div className="SecondaryWrapper">{currGame && <AppNavigation />}</div>
     </div>
   );
