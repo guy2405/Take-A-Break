@@ -1,16 +1,28 @@
+@media only screen and (max-width: 600px) {
+  .instructionWrapper {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .instructionWrapper {
+    width: 50%;
+  }
+}
 .instructionWrapper {
   background-color: var(--color-secondary);
-  width: 50%;
   height: 50%;
   opacity: 0.95;
   z-index: 100;
   position: absolute;
   top: 25%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
   border-radius: 0.5rem;
   border: 2px solid var(--color-secondary-dark);
   padding: 1rem;
   overflow-y: auto;
-  padding: 0.5rem;
 }
 
 .closeIcon {

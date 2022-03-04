@@ -29,22 +29,23 @@ const AppNavigation = ({ excludeInfo }) => {
     <>
       {!excludeInfo && (
         <InfoIcon
-          fontSize="large"
+          fontSize="medium"
           onClick={HandleOnClickedInfo}
-          style={{ margin: "auto 0.5rem", cursor: "pointer" }}
+          className="navigationIcons"
         />
       )}
 
       <RotateLeftIcon
-        fontSize="large"
+        fontSize="medium"
         onClick={HandleOnClickedReset}
-        style={{ margin: "auto 0.5rem", cursor: "pointer" }}
+        className="navigationIcons"
       />
       <HomeIcon
-        fontSize="large"
+        fontSize="medium"
         onClick={HandleOnClickedHome}
-        style={{ margin: "auto 0.5rem", cursor: "pointer" }}
+        className="navigationIcons"
       />
+      <div className="test"></div>
     </>
   );
 };

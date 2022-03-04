@@ -20,7 +20,7 @@ const MainPage = () => {
         text="Bulls and Cows"
       />
       <MenuButton onClick={() => {}} text="Wordle" />
-      <MenuButton onClick={() => {}} text="Recognize the Song" />
+      <MenuButton onClick={() => {}} text="Guess the Song" />
       <MenuButton onClick={() => {}} text="Black Jack" />
     </div>
   );

@@ -3,24 +3,51 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap");
 
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1.3rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.4rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+}
+
 h1 {
   font-family: "Akaya Telivigala", Arial;
-  font-size: 3rem;
   color: var(--color-white);
-  margin: 0;
 }
 
 h2 {
   font-family: "Akaya Telivigala", Arial;
-  font-size: 2rem;
   color: var(--color-white);
   text-align: center;
   margin: 0;
+  margin-bottom: 0.3rem;
 }
 
 h3 {
   font-family: "Open Sans", sans-serif;
-  font-size: 1.4rem;
   text-decoration: underline;
   color: var(--color-white);
   margin: 0;
@@ -28,6 +55,5 @@ h3 {
 
 p {
   font-family: "Open Sans", sans-serif;
-  font-size: 1rem;
   color: var(--color-white);
 }

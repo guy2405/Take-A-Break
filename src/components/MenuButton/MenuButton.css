@@ -1,6 +1,17 @@
+@media only screen and (max-width: 600px) {
+  .MenuButton {
+    height: 50%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .MenuButton {
+    height: 80%;
+  }
+}
+
 .MenuButton {
   width: 50%;
-  height: 80%;
   border-radius: 1rem;
   border: 0.3rem solid var(--color-secondary-dark);
   margin: auto;

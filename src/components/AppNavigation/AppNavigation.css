@@ -1,0 +1,16 @@
+@media only screen and (max-width: 600px) {
+  .navigationIcons {
+    margin: auto 0.2rem;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .navigationIcons {
+    margin: auto 0.5rem;
+    cursor: pointer;
+  }
+}
+.navigationIcons {
+  cursor: pointer;
+}
