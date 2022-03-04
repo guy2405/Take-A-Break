@@ -34,26 +34,25 @@ const BullsAndCows = () => {
 
   const dispatch = useDispatch();
 
-  const restartGame = () => {
-    const chosenColors = chooseRandom(COLORS, NUM_OF_COLORS_IN_TURN);
-    return {
-      chosenColors,
-      turn: 0,
-      guessPlace: 0,
-      userGuess: [[]],
-      resultPins: [],
-      gameOver: false,
-    };
-  };
-
   const updateField = (fieldName, newVal) => {
     dispatch(setCurrGameSpecificData({ fieldName, newVal }));
   };
 
   useEffect(() => {
+    const restartGame = () => {
+      const chosenColors = chooseRandom(COLORS, NUM_OF_COLORS_IN_TURN);
+      return {
+        chosenColors,
+        turn: 0,
+        guessPlace: 0,
+        userGuess: [[]],
+        resultPins: [],
+        gameOver: false,
+      };
+    };
     if (chosenColors) return;
     dispatch(setCurrGameData(restartGame()));
-  }, [chosenColors]);
+  }, [chosenColors, dispatch]);
 
   const chooseRandom = (arr, num = 1) => {
     const res = [];
@@ -133,7 +132,7 @@ const BullsAndCows = () => {
   const onDoneIconClicked = () => {
     const resultCurrTurnArr = [];
     let bullsCounter = 0;
-    [...Array(NUM_OF_COLORS_IN_TURN).keys()].map((index) => {
+    for (let index = 0; index < NUM_OF_COLORS_IN_TURN; index++) {
       if (chosenColors[index].colorCode === userGuess[turn][index]) {
         resultCurrTurnArr.push(BULLS_COLOR);
         bullsCounter = bullsCounter + 1;
@@ -142,7 +141,7 @@ const BullsAndCows = () => {
       )
         resultCurrTurnArr.push(COWS_COLOR);
       else resultCurrTurnArr.push("inherit");
-    });
+    }
     updateField("resultPins", resultPins.concat([resultCurrTurnArr]));
     updateField("turn", turn + 1);
     updateField("guessPlace", 0);
