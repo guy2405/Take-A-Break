@@ -5,7 +5,6 @@ import CloseIcon from "@mui/icons-material/Close";
 import getInstruction from "../../../utils/GamesInstructions";
 
 import "./InstructionWindow.css";
-import { IconButton } from "@mui/material";
 
 const InstructionWindow = () => {
   const ref = useRef(null);
@@ -23,7 +22,7 @@ const InstructionWindow = () => {
     return () => {
       document.removeEventListener("click", handleClickOutside, true);
     };
-  }, []);
+  }, [dispatch]);
 
   const handleOnCloseIconClicked = () => {
     dispatch(setShowInstruction(false));
