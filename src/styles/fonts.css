@@ -2,3 +2,32 @@
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap");
+
+h1 {
+  font-family: "Akaya Telivigala", Arial;
+  font-size: 3rem;
+  color: var(--color-white);
+  margin: 0;
+}
+
+h2 {
+  font-family: "Akaya Telivigala", Arial;
+  font-size: 2rem;
+  color: var(--color-white);
+  text-align: center;
+  margin: 0;
+}
+
+h3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.4rem;
+  text-decoration: underline;
+  color: var(--color-white);
+  margin: 0;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  color: var(--color-white);
+}

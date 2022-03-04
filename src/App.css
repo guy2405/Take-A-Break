@@ -4,11 +4,9 @@
 body {
   /* direction: rtl; */
   background-color: var(--color-primary);
-  color: var(--color-white);
-  font-family: "Open Sans", sans-serif;
-  font-size: 2rem;
   margin: 0;
   height: 100vh;
+  color: var(--color-white);
 }
 
 #root {

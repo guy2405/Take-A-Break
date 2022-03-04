@@ -6,9 +6,6 @@
   margin: auto;
   background-color: var(--color-secondary);
   cursor: pointer;
-  font-family: "Akaya Telivigala", Arial;
-  font-size: 3rem;
-  color: var(--color-white);
 }
 
 .MenuButton:hover {
